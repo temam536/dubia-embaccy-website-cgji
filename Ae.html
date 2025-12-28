@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dubai Embassy Official Website</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Segoe UI, Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+/* HEADER */
+header{
+    background:#0a1a2f;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    color:#d4af37;
+}
+
+nav a{
+    margin:0 15px;
+    color:white;
+    font-weight:bold;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1494526585095-c41746248156");
+    background-size:cover;
+    height:85vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h2{
+    font-size:48px;
+    color:#d4af37;
+}
+
+.hero p{
+    max-width:700px;
+    font-size:20px;
+}
+
+/* SECTION */
+section{
+    padding:60px 40px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    font-size:34px;
+    color:#0a1a2f;
+    margin-bottom:40px;
+}
+
+/* ABOUT */
+.about{
+    text-align:center;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* SERVICES */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    border-top:4px solid #d4af37;
+}
+
+.card h3{
+    color:#0a1a2f;
+}
+
+/* FORM */
+.form-box{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    max-width:600px;
+    margin:auto;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+input, select{
+    width:100%;
+    padding:12px;
+    margin:12px 0;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:#d4af37;
+    border:none;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    background:#0a1a2f;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Dubai Embassy</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#visa">Visa</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <div>
+        <h2>Official Dubai Embassy</h2>
+        <p>Providing trusted visa, travel, and documentation services for the United Arab Emirates.</p>
+    </div>
+</div>
+
+<section id="about">
+    <h2 class="section-title">About the Embassy</h2>
+    <div class="about">
+        The Dubai Embassy ensures professional, transparent, and secure services
+        for visa applications, legal documentation, and international travel assistance.
+    </div>
+</section>
+
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Tourist Visa</h3>
+            <p>Fast processing for short-term visits and tourism.</p>
+        </div>
+        <div class="card">
+            <h3>Work Visa</h3>
+            <p>Employment visa services for UAE companies.</p>
+        </div>
+        <div class="card">
+            <h3>Student Visa</h3>
+            <p>Study opportunities in Dubai and UAE institutions.</p>
+        </div>
+        <div class="card">
+            <h3>Document Legalization</h3>
+            <p>Official authentication and verification services.</p>
+        </div>
+    </div>
+</section>
+
+<section id="visa">
+    <h2 class="section-title">Visa Application Form</h2>
+    <div class="form-box">
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="number" placeholder="Age" required>
+            <select required>
+                <option>Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <input type="text" placeholder="Nationality" required>
+            <select required>
+                <option>Visa Type</option>
+                <option>Tourist Visa</option>
+                <option>Work Visa</option>
+                <option>Student Visa</option>
+            </select>
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2025 Dubai Embassy – Official Website
+</footer>
+
+</body>
+</html>
